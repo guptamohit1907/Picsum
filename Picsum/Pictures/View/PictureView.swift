@@ -53,9 +53,10 @@ class PictureView: UIViewController {
         view.addSubview(control)
         view.addSubview(slider)
         
-        slider.frame = CGRect(x: 20, y: 475, width: view.frame.width - 20, height: 20)
+        slider.frame = CGRect(x: 20, y: 475, width: view.frame.width - 40, height: 20)
         slider.minimumValue = 1
         slider.maximumValue = 10
+        slider.value = 4
         slider.isHidden = true
         slider.addTarget(self, action: #selector(changeBlurRatio), for: .editingChanged)
         slider.addTarget(self, action:#selector(changeBlurRatio(sender:)), for: .valueChanged)
