@@ -114,7 +114,6 @@ class PictureView: UIViewController {
     func setupImageView(filter: Filter) {
         let modifiedUrl = pictureViewModel.downloadURL.optimiseURL()
         PictureNetworking().getFilteredPicture(url: modifiedUrl, filter: filter) { _, _, image in
-            print("URL here is: \(modifiedUrl)")
             DispatchQueue.main.async {
                 switch filter {
                 case .none:
