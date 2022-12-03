@@ -31,8 +31,8 @@ class PictureCell: UICollectionViewCell {
         didSet {
             let modifiedUrl = cellViewModel!.downloadURL.optimiseURL()
             if let pictureUrl = URL(string: modifiedUrl) {
-                //getting data in background concurrent thread
-                DispatchQueue.global(qos: .background).async {
+                //.userInteractive since it affects apps UI update
+                DispatchQueue.global(qos: .userInteractive).async {
                     let imageData:NSData = NSData(contentsOf: pictureUrl as URL)!
                     //update UI in main thread
                     DispatchQueue.main.async {
