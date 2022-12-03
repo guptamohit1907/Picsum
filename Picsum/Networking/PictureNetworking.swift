@@ -85,7 +85,6 @@ class PictureNetworking {
             }
             
             let responseURL = response.value(forKey: "URL") as! NSURL
-            print("Url with blur ratio is: \(responseURL)")
             if let data = try? Data(contentsOf: responseURL as URL) {
                 if let image = UIImage(data: data) {
                     DispatchQueue.main.async {

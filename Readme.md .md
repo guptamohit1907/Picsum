@@ -33,6 +33,6 @@ I have used URLSession that offers a first-party best-in-class API to make netwo
 ## Optimisations:
 Since the images size taken from URL are large and this lead to latency I have optimised the download URL by descreasing width and height parameters in order for the application to be faster and more performant.
 Image loading tasks have been performed asynchronously meaning that the function returns control to the current queue right after image loading task has been sent to be performed on the different queue. It doesn't block the queue by waiting until the task is finished.
-In ImageView I save filtered pictures loacally only on viewDidLoad so we do not need to make a request everytime the user taps on the segment control
+In PictureView I save filtered pictures loacally only on viewDidLoad so we do not need to make a request everytime the user taps on the segment control.
 
 
