@@ -17,7 +17,7 @@ The architecture design pattern I have choose to use in this project is MVVM (Mo
 
 ### Model layer is responsible for storing and representing the data from the logic of implementation.The model I have created is Picture model that holds the data logic of the application.
 
-#### The View layer is responsible for displaying the data to users and handling of layout.
+### The View layer is responsible for displaying the data to users and handling of layout.
 The views I have created are:
 PictureListView that displays the list of all pictures from https://picsum.photos/v2/list? . When the user taps on a picture it will be redirected to PictureView 
 PictureView that displays the choosen image from the user, the title and a segmented control that changes the filter of the image to grayscale and blur. The blur image has a blur scale that can be changed with a slider.
