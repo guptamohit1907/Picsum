@@ -4,14 +4,6 @@
 ## Project description
 In this project I have consumed the public API of Lorem Picsum: https://picsum.photos/ . I have built it in UIKit using MVVM architecture and URLSession to take care of networking.
 
-
-## Files organisation
-🗂️ Delegates - AppDelegate and SceneDelegate
-🗂️ Pictures - Architecture structure
-🗂️ Networking - Classes responsible for networking
-🗂️ Utilities - Extensions to make the development process faster
-
-
 ## Archtiecture
 The architecture design pattern I have choose to use in this project is MVVM (Model View View Model) in order to have a better separation of concerns on the application and to make it easier to maintain.
 
