@@ -62,14 +62,14 @@ class PictureListView: UIViewController {
 // MARK: - UICollectionViewDelegate
 extension PictureListView: UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+         1
     }
 }
 
 // MARK: - UICollectionViewDataSource
 extension PictureListView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.pictureCellViewModels.count
+         viewModel.pictureCellViewModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
